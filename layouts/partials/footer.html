@@ -1,0 +1,6 @@
+{{ $site := .Site.Data.site }}
+{{ $footer := .Site.GetPage "footer" }}
+<footer class="site-footer">
+  {{ with $footer }}{{ .Content }}{{ end }}
+  <p class="copyright">&copy; {{ $site.copyright_year }} {{ $site.name }}. All rights reserved.</p>
+</footer>

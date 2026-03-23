@@ -1,0 +1,17 @@
+{{ $gallery := readDir "static/images/gallery" }}
+{{ $images := slice }}
+{{ range $gallery }}
+  {{ $ext := strings.ToLower (path.Ext .Name) }}
+  {{ if or (eq $ext ".jpg") (eq $ext ".jpeg") (eq $ext ".png") (eq $ext ".webp") }}
+    {{ $images = $images | append . }}
+  {{ end }}
+{{ end }}
+{{ if gt (len $images) 0 }}
+<div class="gallery">
+  {{ range $images }}
+  <div class="gallery-item">
+    <img src="/images/gallery/{{ .Name }}" alt="Stained glass work by Aneurin Warren" loading="lazy">
+  </div>
+  {{ end }}
+</div>
+{{ end }}

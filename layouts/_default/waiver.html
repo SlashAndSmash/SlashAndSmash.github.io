@@ -1,0 +1,44 @@
+{{ define "main" }}
+{{ $site := .Site.Data.site }}
+<section class="page-content content-panel waiver-page">
+
+  <h2>{{ .Title }}</h2>
+  <div class="waiver-intro">{{ .Params.intro | markdownify }}</div>
+
+  <form class="waiver-form" action="https://formspree.io/f/{{ $site.formspree_id }}" method="POST">
+    <input type="hidden" name="_subject" value="Waiver Form Submission">
+    <input type="hidden" name="form_type" value="waiver">
+
+    {{ range .Params.fields }}
+    <h3>{{ .section }}</h3>
+    {{ range .items }}
+    <div class="form-group">
+      <label for="w-{{ .name }}">{{ .label }}</label>
+      {{ if eq .type "textarea" }}
+      <textarea id="w-{{ .name }}" name="{{ .name }}" rows="3"{{ with .placeholder }} placeholder="{{ . }}"{{ end }}></textarea>
+      {{ else }}
+      <input type="{{ .type }}" id="w-{{ .name }}" name="{{ .name }}" required{{ with .placeholder }} placeholder="{{ . }}"{{ end }}>
+      {{ end }}
+    </div>
+    {{ end }}
+    {{ end }}
+
+    <h3>Acknowledgement</h3>
+
+    <p>{{ .Params.confirmations_intro }}</p>
+
+    {{ range $i, $text := .Params.confirmations }}
+    <div class="checkbox-group">
+      <label><input type="checkbox" name="confirm_{{ $i }}" required> {{ $text | markdownify }}</label>
+    </div>
+    {{ end }}
+
+    <div class="form-group" style="margin-top: 2rem;">
+      <label for="w-sig">{{ .Params.signature_label }}</label>
+      <input type="text" id="w-sig" name="signature" required placeholder="Your full name">
+    </div>
+
+    <button type="submit" class="btn btn-primary" style="margin-top: 1rem;">{{ .Params.submit_button }}</button>
+  </form>
+</section>
+{{ end }}

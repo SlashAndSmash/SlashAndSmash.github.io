@@ -1,0 +1,5 @@
+{{ $site := .Site.Data.site }}
+<div class="calendly-embed">
+  <div class="calendly-inline-widget" data-url="{{ $site.calendly_url }}" style="min-width:320px;height:1000px;"></div>
+  <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+</div>

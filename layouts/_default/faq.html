@@ -1,0 +1,31 @@
+{{ define "main" }}
+<section class="page-content content-panel">
+  {{ .Content }}
+  {{ $faqs := .Params.items }}
+  {{ if $faqs }}
+  <div class="faq-accordion">
+    {{ range $i, $item := $faqs }}
+    <div class="faq-item">
+      <button class="faq-question" aria-expanded="false" aria-controls="faq-{{ $i }}">
+        <span>{{ $item.question }}</span>
+        <span class="faq-chevron" aria-hidden="true"></span>
+      </button>
+      <div class="faq-answer" id="faq-{{ $i }}" role="region" hidden>
+        {{ $site := $.Site.Data.site }}
+        {{ $answer := $item.answer }}
+        {{ $answer = replace $answer "{duration}" $site.duration }}
+        {{ $answer = replace $answer "{age_restriction}" $site.age_restriction }}
+        {{ $answer = replace $answer "{refund_days}" (string $site.refund_days) }}
+        {{ $answer = replace $answer "{venue}" $site.venue }}
+        {{ $answer = replace $answer "{class_size}" (string $site.class_size) }}
+        {{ $answer = replace $answer "{price}" $site.price }}
+        {{ $answer = replace $answer "{email}" $site.email }}
+        {{ $answer = replace $answer "{location_note}" $site.location_note }}
+        <p>{{ $answer }}</p>
+      </div>
+    </div>
+    {{ end }}
+  </div>
+  {{ end }}
+</section>
+{{ end }}

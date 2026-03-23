@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+<head>
+  {{- partial "head.html" . -}}
+</head>
+<body>
+  <div class="page-wrap">
+    {{- partial "header.html" . -}}
+    <main>
+      {{- block "main" . }}{{ end -}}
+    </main>
+    {{- partial "footer.html" . -}}
+  </div>
+  {{- partial "cookie-consent.html" . -}}
+  <script src="/js/main.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+# ============================================
+# SITE-WIDE SETTINGS — Edit these values!
+# ============================================
+
+# Your details
+name: "Aneurin Warren"
+email: "slash.and.smash@artlover.com"
+instagram: "https://www.instagram.com/slash.and.smash.stained.glass/"
+instagram_handle: "@slash.and.smash.stained.glass"
+
+# Location
+venue: "Shepherd's Bush"
+location_note: "Hammersmith Academy, 25 Cathnor Road, Shepherd’s Bush, W12 9JD. Classes of 1 -2 participants might be held at: 96 Godolphin Road, Shepherd’s Bush, W12 8JW. This will be confirmed after booking."
+gettingthere: "Test"
+
+# Class details
+price: "£75"
+class_size: 4
+duration: "2.5 hours"
+age_restriction: "18+"
+
+# Booking & contact
+calendly_url: "https://calendly.com/aneurinwarren87/30min"
+formspree_id: "xojkzlop"
+
+# Policy
+refund_days: 20
+
+# Copyright
+copyright_year: 2026
