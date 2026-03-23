@@ -1,4 +1,4 @@
-baseURL = "https://example.com/"
+baseURL = "https://slashandsmash.github.io/"
 languageCode = "en-gb"
 title = "Slash & Smash — Stained Glass Classes"
 disableKinds = ["taxonomy", "term"]
