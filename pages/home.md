@@ -2,7 +2,6 @@
 title: "Home"
 url: "/"
 layout: "homepage"
-description: "Learn the art of stained glass in small, hands-on classes with Aneurin Warren."
 hero_title: "Slash & Smash"
 hero_subtitle: "Stained glass classes in small groups — no experience needed"
 hero_button: "Book a Class"

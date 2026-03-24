@@ -2,7 +2,6 @@
 title: "Waiver & Health Declaration"
 url: "/waiver/"
 layout: "waiver"
-description: "Waiver and health declaration form for Slash & Smash stained glass classes."
 sitemap:
   disable: true
 

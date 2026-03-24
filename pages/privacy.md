@@ -2,7 +2,6 @@
 title: "Privacy Notice"
 url: "/privacy/"
 layout: "privacy"
-description: "Privacy notice for Slash & Smash stained glass classes."
 ---
 
 ## Privacy Notice

@@ -2,7 +2,6 @@
 title: "Contact & Payment"
 url: "/contact/"
 layout: "contact"
-description: "Get in touch with Aneurin Warren or make a payment for your stained glass class."
 ---
 
 ## Contact

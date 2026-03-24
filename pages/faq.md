@@ -2,7 +2,6 @@
 title: "FAQ"
 url: "/faq/"
 layout: "faq"
-description: "Frequently asked questions about stained glass classes with Aneurin Warren."
 
 # ============================================
 # FAQ — Add, edit, or remove questions here.
@@ -33,7 +32,7 @@ items:
     answer: "You can cancel up to {refund_days} days before your class for a full refund. Cancellations made less than {refund_days} days before the class are non-refundable, but you're welcome to transfer your booking to someone else."
 
   - question: "How do I pay?"
-    answer: "Payment details are on the Contact page. Please pay after booking to secure your place — your spot isn't confirmed until payment is received."
+    answer: "After booking, you’ll receive an email with payment instructions within 24 hours. Please complete your payment within 24 hours of receiving that email to secure your spot, as unpaid bookings may be released to others. If you don't see the email in your inbox, please check your spam folder to ensure your spot is confirmed on time."
 
   - question: "Where do I park?"
     answer: "Free parking is available at both venues. Please provide your car registration, make, and color before you arrive. Free bicycle parking is also available."

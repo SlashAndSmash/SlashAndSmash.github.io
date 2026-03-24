@@ -29,7 +29,7 @@
 
     {{ range $i, $text := .Params.confirmations }}
     <div class="checkbox-group">
-      <label><input type="checkbox" name="confirm_{{ $i }}" required> {{ $text | markdownify }}</label>
+      <label><input type="checkbox" name="{{ $text }}" required> {{ $text | markdownify }}</label>
     </div>
     {{ end }}
 

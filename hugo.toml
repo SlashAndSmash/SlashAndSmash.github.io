@@ -2,7 +2,25 @@ baseURL = "https://slashandsmash.github.io/"
 languageCode = "en-gb"
 title = "Slash & Smash — Stained Glass Classes"
 disableKinds = ["taxonomy", "term"]
-contentDir = "pages"
+
+[module]
+  [[module.mounts]]
+    source = "pages"
+    target = "content"
+    files = ["**.md"]
+  [[module.mounts]]
+    source = "pages"
+    target = "data"
+    files = ["**.yaml"]
+  [[module.mounts]]
+    source = "layouts"
+    target = "layouts"
+  [[module.mounts]]
+    source = "static"
+    target = "static"
+  [[module.mounts]]
+    source = "archetypes"
+    target = "archetypes"
 
 [menus]
   [[menus.main]]

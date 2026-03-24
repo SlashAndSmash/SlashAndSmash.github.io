@@ -2,7 +2,6 @@
 title: "Book a Class "
 url: "/book/"
 layout: "book"
-description: "Book your stained glass class with Aneurin Warren."
 ---
 
 ## Book a Class ({{< price >}} per person)
@@ -25,16 +24,16 @@ Choose a date that suits you from the calendar below. Classes are small (maximum
 
 ### Before your class
 
-- **Waiver form** — After booking, you'll automatically receive a waiver form by email. Please complete and return it before your class. You won't be able to participate without a signed waiver.
+- **Waiver form** — After booking, you'll receive a link to a waiver form by email. Please submit it before your class. You won't be able to participate without a signed waiver.
 - **Choose Your Project** — Want to see what you'll be making? Pick your favorite design from our templates: [Download the PDF templates here](/documents/Slash_and_Smash_Templates.pdf).
 
 ### Payment
 
-**After booking**, you will receive an **email** with payment instructions. **Your spot is not confirmed until payment is received**.
+**After booking**, you will receive an **email** within 24hrs with payment instructions. **Your spot is not confirmed until payment is received**.
 
 - **Can’t find the email?** Please check your **spam** or **junk** folder.
 
-- **Still nothing?** If you don’t receive the email within **1 hour**, please **contact me directly** to finalize your booking.
+- **Still nothing?** If you don’t receive the email within **24 hour**, please **contact me directly** to finalize your booking.
 
 
 ### Cancellation policy
