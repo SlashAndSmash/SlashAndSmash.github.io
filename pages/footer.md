@@ -9,4 +9,4 @@ build:
 
 Instagram [@slash.and.smash.stained.glass](https://www.instagram.com/slash.and.smash.stained.glass/)
 
-[Privacy Notice](/privacy/)
+[Privacy Notice](/privacy/) · [AI Disclaimer](/ai-disclaimer/)

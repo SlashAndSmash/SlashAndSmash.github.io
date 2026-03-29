@@ -223,11 +223,25 @@ li { margin-bottom: 0.4rem; }
   margin-bottom: 1rem;
   position: relative;
   overflow: hidden;
-  aspect-ratio: 1640 / 653;
+  aspect-ratio: 1633 / 650;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    aspect-ratio: auto;
+    height: 400px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    aspect-ratio: auto;
+    height: 350px;
+  }
 }
 
 .hero-bg {
@@ -526,6 +540,33 @@ li { margin-bottom: 0.4rem; }
   margin-bottom: 0;
   font-size: 0.95rem;
   color: #000;
+}
+
+/* ---- AI Disclaimer Images ---- */
+
+.ai-images {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.ai-image-card img {
+  border-radius: 12px;
+  width: 100%;
+}
+
+.ai-image-card p {
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--dark);
+  margin-top: 0.5rem;
+}
+
+@media (max-width: 600px) {
+  .ai-images {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* ---- Calendly Embed ---- */

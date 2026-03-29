@@ -48,6 +48,9 @@ items:
 
   - question: "What safety measures are in place?"
     answer: "Your safety is my top priority! I provide all the necessary safety gear and will be by your side every step of the way. I’ll guide you through the process to ensure you and your fellow crafters stay safe while having fun."
+
+  - question: "Was AI used in this website?"
+    answer: "Yes — AI tools were used to help build and design this website. However, all images of stained glass work are real photographs of pieces handmade by real people. The main image on the home page is an AI-generated version of a painting by my grandfather, Frank Foster, who was a stained glass window artist. You can read more on the [AI Disclaimer](/ai-disclaimer/) page."
 ---
 
 ## Frequently Asked Questions

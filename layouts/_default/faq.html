@@ -21,7 +21,7 @@
         {{ $answer = replace $answer "{price}" $site.price }}
         {{ $answer = replace $answer "{email}" $site.email }}
         {{ $answer = replace $answer "{location_note}" $site.location_note }}
-        <p>{{ $answer }}</p>
+        {{ $answer | markdownify }}
       </div>
     </div>
     {{ end }}

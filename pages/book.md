@@ -8,7 +8,7 @@ paypal:
     heading: "Payment"
     text: "Click below to pay securely via PayPal. Please add your **name and class date** in the notes."
     button_text: "Pay with PayPal"
-    note: "Bank details: Sort code 30-92-53 · Account 2986 5860 · Aneurin Warren"
+    note: "Alternatively, pay via bank transfer: Aneurin Warren · Sort code 30-92-53 · Account 2986 5860 · Reference: [Date of Class] "
 ---
 
 ## Book a Class ({{< price >}} per person)
@@ -33,7 +33,7 @@ Please **select a date** that suits you **from the calendar** below, then **comp
 
 ### Before your class
 
-- **Waiver form** — After booking, you'll receive a link to a waiver form by email. Please submit it before your class. You won't be able to participate without a signed waiver.
+- **Waiver form** — After booking, please ensure everyone in your group fills out and submits the following waiver: [Complete the waiver here](/waiver/).
 - **Choose Your Project** — Want to see what you'll be making? Pick your favorite design from our templates: [Download the PDF templates here](/documents/Slash_and_Smash_Templates.pdf).
 
 
