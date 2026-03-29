@@ -249,7 +249,7 @@ li { margin-bottom: 0.4rem; }
 .hero-bg {
   position: absolute;
   inset: 0;
-  background: url('/images/hero.jpeg') center / cover no-repeat;
+  background: url('/images/hero.jpg') center / cover no-repeat;
   z-index: 0;
 }
 
