@@ -232,15 +232,17 @@ li { margin-bottom: 0.4rem; }
 
 @media (max-width: 768px) {
   .hero {
-    aspect-ratio: auto;
+    aspect-ratio: unset;
     height: 400px;
+    min-height: 400px;
   }
 }
 
 @media (max-width: 480px) {
   .hero {
-    aspect-ratio: auto;
+    aspect-ratio: unset;
     height: 350px;
+    min-height: 350px;
   }
 }
 
