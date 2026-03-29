@@ -1,0 +1,30 @@
+{{- $site := .Site.Data.site -}}
+{{- $page := .Page -}}
+{{ range $page.Params.paypal }}
+<div class="paypal-widget">
+  {{ with .heading }}<h3>{{ . }}</h3>{{ end }}
+  {{ with .text }}<p>{{ . | markdownify }}</p>{{ end }}
+  {{ if eq .type "link" }}
+  <a href="https://paypal.me/{{ $site.paypal_me }}" target="_blank" rel="noopener" class="btn btn-primary">{{ .button_text | default "Pay via PayPal.me" }}</a>
+  {{ else if eq .type "button" }}
+  <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+    <input type="hidden" name="cmd" value="_xclick">
+    <input type="hidden" name="business" value="{{ $site.paypal_email }}">
+    <input type="hidden" name="item_name" value="Stained Glass Class — Slash &amp; Smash">
+    <input type="hidden" name="currency_code" value="GBP">
+    <input type="hidden" name="no_shipping" value="1">
+    <input type="hidden" name="no_note" value="0">
+    <button type="submit" class="btn btn-primary">{{ .button_text | default "Pay with PayPal" }}</button>
+  </form>
+  {{ else if eq .type "hosted" }}
+  {{ with $site.paypal_button_id }}
+  <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+    <input type="hidden" name="cmd" value="_s-xclick">
+    <input type="hidden" name="hosted_button_id" value="{{ . }}">
+    <button type="submit" class="btn btn-primary">{{ $.button_text | default "Pay with PayPal" }}</button>
+  </form>
+  {{ end }}
+  {{ end }}
+  {{ with .note }}<p class="paypal-note">{{ . | markdownify }}</p>{{ end }}
+</div>
+{{ end }}

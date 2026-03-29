@@ -1,0 +1,15 @@
+{{- /* PayPal Buy Now button — sends buyer to PayPal checkout with pre-filled amount */ -}}
+{{ $site := .Site.Data.site }}
+<div class="paypal-widget">
+  <h4>Pay with PayPal</h4>
+  <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+    <input type="hidden" name="cmd" value="_xclick">
+    <input type="hidden" name="business" value="{{ $site.paypal_email }}">
+    <input type="hidden" name="item_name" value="Stained Glass Class — Slash &amp; Smash">
+    <input type="hidden" name="amount" value="{{ strings.TrimLeft "£" $site.price }}">
+    <input type="hidden" name="currency_code" value="GBP">
+    <input type="hidden" name="no_shipping" value="1">
+    <p>Click below to pay securely via PayPal. Please add your <strong>name and class date</strong> in the notes.</p>
+    <button type="submit" class="btn btn-primary">Pay {{ $site.price }} with PayPal</button>
+  </form>
+</div>

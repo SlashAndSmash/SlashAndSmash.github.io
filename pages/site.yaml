@@ -23,6 +23,14 @@ age_restriction: "18+"
 calendly_url: "https://calendly.com/aneurinwarren87/30min"
 formspree_id: "xojkzlop"
 
+# PayPal
+# paypal_me: your PayPal.me username (e.g. "AneurinWarren")
+# paypal_email: your PayPal email (for Buy Now button)
+# paypal_button_id: your PayPal hosted button ID (optional, from PayPal dashboard)
+paypal_me: "AneurinWarren"
+paypal_email: "aneurinwarren87@gmail.com"
+paypal_button_id: ""
+
 # Policy
 refund_days: 20
 
@@ -34,5 +42,5 @@ copyright_year: 2026
 # ============================================
 # Use hex colour codes (e.g. "#2c3325")
 header_footer_bg: "#454f28"
-header_footer_text: "#b8b0a0"
-header_footer_accent: "#c9a040"
+header_footer_text: "#BBBBAF"
+header_footer_accent: "#EEBB44f0"

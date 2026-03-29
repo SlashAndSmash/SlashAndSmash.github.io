@@ -2,16 +2,18 @@
 <section class="hero">
   <div class="hero-bg"></div>
   <div class="hero-inner">
-    <h1>{{ .Params.hero_title | default .Site.Title }}</h1>
-    <p class="hero-tagline">{{ .Params.hero_subtitle }}</p>
-    <a href="{{ .Params.hero_button_link | default "/book/" }}" class="btn btn-primary">{{ .Params.hero_button | default "Book a Class" }}</a>
+    {{ with .Params.hero_title }}<h1>{{ . }}</h1>{{ end }}
+    {{ with .Params.hero_subtitle }}<p class="hero-tagline">{{ . }}</p>{{ end }}
+    <a href="{{ .Params.hero_button_link | default "/book/" }}" class="btn btn-primary" style="margin-top: {{ .Params.hero_button_top_spacing | default "2rem" }}">{{ .Params.hero_button | default "Book a Class" }}</a>
   </div>
 </section>
 {{ with .Params.features }}
+{{ with $.Params.features_title }}<h2 class="features-title">{{ . }}</h2>{{ end }}
 <div class="feature-strip">
   {{ range . }}
   <div class="feature-box">
-    <h4>{{ . }}</h4>
+    <h4>{{ .title }}</h4>
+    {{ with .text }}<p>{{ . }}</p>{{ end }}
   </div>
   {{ end }}
 </div>

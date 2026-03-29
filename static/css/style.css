@@ -223,7 +223,7 @@ li { margin-bottom: 0.4rem; }
   margin-bottom: 1rem;
   position: relative;
   overflow: hidden;
-  min-height: 300px;
+  aspect-ratio: 1640 / 653;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -258,7 +258,7 @@ li { margin-bottom: 0.4rem; }
 .hero h1 {
   font-size: 3.2rem;
   color: var(--gold);
-  text-shadow: 0 2px 16px rgba(0,0,0,1), 0 0 50px rgba(0,0,0,0.7), 0 4px 30px rgba(0,0,0,0.6);
+  text-shadow: 0 0 20px rgba(0,0,0,1), 0 0 60px rgba(0,0,0,1), 0 0 100px rgba(0,0,0,0.8), 0 4px 40px rgba(0,0,0,1), 0 0 150px rgba(0,0,0,0.5);
 }
 
 .hero-tagline {
@@ -284,15 +284,18 @@ li { margin-bottom: 0.4rem; }
   margin-bottom: 1rem;
 }
 
+.features-title {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
 .feature-box {
   background: var(--cream);
   border-radius: 16px;
-  padding: 1rem 1.25rem;
+  padding: 1.25rem 1.5rem;
   text-align: center;
   border-left: 5px solid var(--olive);
   box-shadow: 0 2px 8px rgba(44,51,37,0.06);
-  display: flex;
-  align-items: center;
   justify-content: center;
 }
 
@@ -303,7 +306,14 @@ li { margin-bottom: 0.4rem; }
 .feature-box h4 {
   font-size: 1.05rem;
   color: var(--heading-color, var(--dark));
+  margin: 0 0 0.4rem;
+}
+
+.feature-box p {
+  font-size: 0.85rem;
+  color: #666;
   margin: 0;
+  line-height: 1.5;
 }
 
 /* ---- Content Panel ---- */
@@ -337,7 +347,7 @@ li { margin-bottom: 0.4rem; }
 .gallery-item {
   overflow: hidden;
   border-radius: 16px;
-  aspect-ratio: 4/5;
+  aspect-ratio: 4/3;
 }
 
 .gallery-item img {
@@ -484,6 +494,38 @@ li { margin-bottom: 0.4rem; }
   accent-color: var(--olive);
   vertical-align: top;
   margin-top: 0.2rem;
+}
+
+/* ---- PayPal Widget ---- */
+
+.paypal-widget {
+  background: var(--cream);
+  border: 2px solid var(--gold);
+  border-radius: 16px;
+  padding: 1.5rem 2rem;
+  margin: 1.5rem 0;
+  text-align: center;
+}
+
+.paypal-widget h3 {
+  margin: 0 0 0.5rem;
+}
+
+.paypal-widget p {
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+}
+
+.paypal-widget form {
+  margin-bottom: 0;
+}
+
+.paypal-widget .paypal-note {
+  padding-top: 0;
+  margin-top: 1.5rem;
+  margin-bottom: 0;
+  font-size: 0.95rem;
+  color: #000;
 }
 
 /* ---- Calendly Embed ---- */
